@@ -1,0 +1,39 @@
+{
+  "name": "alfred-rarbg",
+  "version": "0.0.0",
+  "description": "Search RARBG from Alfred",
+  "license": "MIT",
+  "repository": "awhite/alfred-rarbg",
+  "author": {
+    "name": "Alex White",
+    "email": "a24white@uwaterloo.ca",
+    "url": "alexpwhite.me"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "info.plist"
+  ],
+  "keywords": [
+    "alfred",
+    "workflow",
+    "alfy"
+  ],
+  "dependencies": {
+    "alfy": "^0.6.0",
+    "rarbg-api": "^1.1.2"
+  },
+  "devDependencies": {
+    "alfy-test": "^0.3.0",
+    "ava": "^0.18.0",
+    "xo": "^0.17.0"
+  }
+}
