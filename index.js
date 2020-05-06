@@ -3,7 +3,7 @@ const alfy = require('alfy');
 const rarbgApi = require('rarbg-api');
 
 rarbgApi.search(alfy.input, { sort: 'seeders' }).then(data => {
-	alfy.output(data.map(function(x) {
+	alfy.output(data.map(function (x) {
 		return {
 			title: x.title,
 			subtitle: `${x.seeders} seeder${x.seeders == 1 ? '' : 's'}, ${x.leechers} leecher${x.leechers == 1 ? '' : 's'}, ${humanFileSize(x.size, false)}`,
