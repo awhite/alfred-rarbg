@@ -1,6 +1,6 @@
 {
   "name": "alfred-rarbg",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Search RARBG from Alfred",
   "license": "MIT",
   "repository": "awhite/alfred-rarbg",
