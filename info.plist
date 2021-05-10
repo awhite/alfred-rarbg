@@ -2,14 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>rarbg</string>
 	<key>bundleid</key>
 	<string>me.alexpwhite.rarbg</string>
 	<key>category</key>
-	<string>Tools</string>
+	<string>Internet</string>
 	<key>connections</key>
 	<dict>
+		<key>AB3D4E42-C415-4954-8C6F-6C035731F291</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>41EC1CC2-7231-42B0-A14A-8E0D462B5E9A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D5201406-699A-4A34-8608-35581BDF4BD3</key>
 		<array>
 			<dict>
@@ -24,34 +35,27 @@
 			</dict>
 		</array>
 	</dict>
+	<key>createdby</key>
+	<string>Alex White</string>
+	<key>description</key>
+	<string>Open magnet links from Alfred</string>
 	<key>disabled</key>
 	<false/>
+	<key>name</key>
+	<string>RARBG Search</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>F8E5F63D-5491-42F3-B187-5D074C0A6C06</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -61,7 +65,7 @@
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<true/>
+				<false/>
 				<key>queuedelaymode</key>
 				<integer>0</integer>
 				<key>queuemode</key>
@@ -88,19 +92,113 @@
 			<key>uid</key>
 			<string>D5201406-699A-4A34-8608-35581BDF4BD3</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>F8E5F63D-5491-42F3-B187-5D074C0A6C06</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>41EC1CC2-7231-42B0-A14A-8E0D462B5E9A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>rarx</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Searching...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node xxx.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>index.js</string>
+				<key>subtext</key>
+				<string>XXX</string>
+				<key>title</key>
+				<string>Search RARBG from Alfred</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>AB3D4E42-C415-4954-8C6F-6C035731F291</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>Pressing Enter on a result will open the magnet link associated with that torrent.</string>
 	<key>uidata</key>
 	<dict>
-		<key>F8E5F63D-5491-42F3-B187-5D074C0A6C06</key>
+		<key>41EC1CC2-7231-42B0-A14A-8E0D462B5E9A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>155</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>140</integer>
+		</dict>
+		<key>AB3D4E42-C415-4954-8C6F-6C035731F291</key>
+		<dict>
+			<key>xpos</key>
+			<integer>15</integer>
+			<key>ypos</key>
+			<integer>140</integer>
 		</dict>
 		<key>D5201406-699A-4A34-8608-35581BDF4BD3</key>
 		<dict>
@@ -109,6 +207,19 @@
 			<key>ypos</key>
 			<integer>10</integer>
 		</dict>
+		<key>F8E5F63D-5491-42F3-B187-5D074C0A6C06</key>
+		<dict>
+			<key>xpos</key>
+			<integer>150</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>alexpwhite.me</string>
 </dict>
 </plist>
